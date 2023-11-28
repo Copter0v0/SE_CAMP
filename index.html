@@ -6,103 +6,105 @@
     </head>
     <body>
         <h1>
-            <b style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Workshop #HTML-FORM </b>
+            <b>Workshop #HTML-FORM </b>
         </h1>
-        <table width="50%">
-            <tr>
-                <td><b>ชื่อ</b></td>
-                <td>
-                    <input type="text">
-                </td>
-            </tr>
-            <tr>
-                <td><b>สกุล</b></td>
-                <td>
-                    <input type="text">
-                </td>
-            </tr>
-            <tr>
-                <td><b>วัน/เดือน/ปีเกิด</b></td>
-                <td>
-                    <input type="date">
-                </td>
-            </tr>
-            <tr>
-                <td><b>อายุ</b></td>
-                <td>
-                    <input type="text">
-                </td>
-            </tr>
-            <tr>
-                <td><b>เพศ</b></td>
-                <td>
-                    <input id="radio_male"
-                    type="radio"
-                    name="radio_gender">ชาย
-                    <input id="radio_female"
-                    type="radio"
-                    name="radio_gender">หญิง
-                </td>
-            </tr>
-            <tr>
-                <td><b>รูป</b></td>
-                <td>
-                    <input type="file">
-                </td>
-            </tr>
-            <tr>
-                <td><b>ที่อยู่</b></td>
-                <td>
-                    <textarea name="" id="" cols="22" rows="7"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td><b>สีที่ชอบ</b></td>
-                <td>
-                    <select>
-                        <option value=""
-                        disabled
-                        selected>-</option>
-                        <option style="color: red;">สีแดง</option>
-                        <option style="color: rgb(162, 162, 24);">สีเหลือง</option>
-                        <option style="color: green">สีเขียว</option>
-                        <option>สีขาว</option>
-                        <option>สีดำ</option>
-                        <option style="color: pink">สีชมพู</option>
-                        <option style="color: blue;">สีน้ำเงิน</option>
-                        <option style="color: cyan;">สีฟ้า</option>
-                        <option style="color: purple;">สีม่วง</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><b>แนวเพลงที่ชอบ</b></td>
-                <td>
-                    <input id="radio_genre"
+        <table width="30%">
+            <form action="">
+                <tr>
+                    <td><b>ชื่อ</b></td>
+                    <td>
+                        <input type="text" name="txtName" id="txtName" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>สกุล</b></td>
+                    <td>
+                        <input type="text" name="txtLastName" id="txtLastName" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>วัน/เดือน/ปีเกิด</b></td>
+                    <td>
+                        <input type="date" name="birthDate" id="birthDate" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>อายุ</b></td>
+                    <td>
+                        <input type="text" name="txtAge" id="txtAge" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>เพศ</b></td>
+                    <td>
+                        <input id="radio_male"
                         type="radio"
-                        name="radio_countrygenre">เพื่อชีวิต
+                        name="radio_gender" value="">ชาย
+                        <input id="radio_female"
+                        type="radio"
+                        name="radio_gender" value="">หญิง
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>รูป</b></td>
+                    <td>
+                        <input type="file" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>ที่อยู่</b></td>
+                    <td>
+                        <textarea name="" id="" cols="22" rows="7"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>สีที่ชอบ</b></td>
+                    <td>
+                        <select>
+                            <option value=""
+                            disabled
+                            selected>-</option>
+                            <option style="color: red;">สีแดง</option>
+                            <option style="color: rgb(162, 162, 24);">สีเหลือง</option>
+                            <option style="color: green">สีเขียว</option>
+                            <option>สีขาว</option>
+                            <option>สีดำ</option>
+                            <option style="color: pink">สีชมพู</option>
+                            <option style="color: blue;">สีน้ำเงิน</option>
+                            <option style="color: cyan;">สีฟ้า</option>
+                            <option style="color: purple;">สีม่วง</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>แนวเพลงที่ชอบ</b></td>
+                    <td>
                         <input id="radio_genre"
-                        type="radio"
-                        name="radio_Luk Thunggenre">ลูกทุ่ง
-                        <input id="radio_genre"
-                        type="radio"
-                        name="radio_etcgenre">อื่นๆ
-                </td>
-            </tr>
-            <tr><td></td></tr>
-            <tr>
-                <td>
-                    <input type="checkbox"> ยินยอมให้เก็บข้อมูล
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="reset"/>
-                </td>
-                <td>
-                    <input type="submit"/>
-                </td>
-            </tr>
+                            type="radio"
+                            name="radio_countrygenre">เพื่อชีวิต
+                            <input id="radio_genre"
+                            type="radio"
+                            name="radio_Luk Thunggenre">ลูกทุ่ง
+                            <input id="radio_genre"
+                            type="radio"
+                            name="radio_etcgenre">อื่นๆ
+                    </td>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value=""> ยินยอมให้เก็บข้อมูล
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="reset">
+                    </td>
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </form>
         </table>
     </body>
 </html>
