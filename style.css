@@ -1,0 +1,39 @@
+@keyframes owo {
+    0%   {left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+div{
+    background-color: red;
+    position: relative;
+    animation-name: owo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+body{
+    background: blanchedalmond;
+}
+#myP{
+    font-size: 20pt;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40pt;
+    border: 5pt solid orange;
+    border-radius: 10%;
+    padding-top:25px;
+    margin: 50px 25px;
+    
+}
+.box:hover{
+    img{
+        opacity: 100%;
+    }
+}
