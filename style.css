@@ -1,39 +1,35 @@
-@keyframes owo {
-    0%   {left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
-}
-div{
-    background-color: red;
-    position: relative;
-    animation-name: owo;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
-body{
-    background: blanchedalmond;
-}
-#myP{
-    font-size: 20pt;
-}
-.box{
+.box {
     width: 400px;
     height: 400px;
-    color: black;
+    background-color: #31304D;
+    color: white;
     text-align: center;
-    font-weight: bold;
-    font-size: 40pt;
-    border: 5pt solid orange;
+    position: relative;
+    margin: auto;
     border-radius: 10%;
-    padding-top:25px;
-    margin: 50px 25px;
-    
+    transition: box-shadow 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+@keyframes textcolor {
+    0% { color: red; }
+    25% { color: greenyellow; }
+    50% { color: blue; }
+    75% { color: white; }
+    100% { color: red; }
+}
+
+.box h3 {
+    animation-name: textcolor;
+    animation-iteration-count: infinite;
+    animation-delay: 700ms;
+    animation-duration: 5s;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .box:hover{
-    img{
-        opacity: 100%;
-    }
+    box-shadow: 5px 5px 10px black;
+    font-size: 20pt;
 }
