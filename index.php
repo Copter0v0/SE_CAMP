@@ -1,36 +1,91 @@
 <html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylephp.css" />
+    </head>
     <body>
-        <h1>This is PHP <?php echo 'hello world!'?></h1>
-        <div>
-            <p>1</p>
-            <?php 
-            $var_a = 1;
-            $var_a = "1";
-            print_r($var_a);
-            var_dump($var_a);
-            echo $var_a + 2;
-            echo $var_a . 2;
-            $arry = array();
-            $arry = [];
-            $arry[] = 1;
-            $arry[] = 2;
-            $arry[0] = 3;
-            print_r($arry);
-            for($i = 0; $i < count($arry); $i++){
-                print("$arry[$i]<br>");
-            }
-            {
-                #
-                //
-                /* */
-                
-                echo "<h1>my h1</h1>";
-            ?>
-            <p>2</p>
-            <?php 
-            }
-            ?>
-            <p>3</p>
+    <section>
+        <?php $multi_x = 69; ?>
+        <div class="outside-border">
+            <div class="silencer"></div>
+            <div class="volume-up"></div>
+            <div class="volume-down"></div>
+            <div class="button-on"></div>
+            <div class="inside-border">
+
+                <!-- Camera -->
+
+                <div class="camera">
+                    <div class="camera-dot">
+                        <div class="camera-dot-2"></div>
+                        <div class="camera-dot-3"></div>
+                    </div>
+                    <div class="camera-speaker">
+                    </div>
+                </div>
+
+                <!-- Lock -->
+
+                <div class="lock">
+                    <div class="lock-locked"></div>
+                </div>
+
+                <!-- Time -->
+
+                <div class="time"><?php echo "สูตรคูณแม่ $multi_x" ?></div>
+
+
+
+                <!-- Battery and Signal -->
+
+                <div class="t-r-info">
+                    <div class="dots">...</div>
+                    <div class="battery">
+                        <div class="bar"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+
+                <!-- Date -->
+
+                <div class="date">
+                <?php
+                for($i = 1; $i <= 24; $i++){
+                    $result = $multi_x*$i;
+                    echo "<h3>$multi_x x $i = $result</h3>";
+                }
+                ?>
+                </div>
+
+
+                <!-- Torch -->
+
+                <div class="torch-outter">
+                    <div class="light"></div>
+                    <div class="top"></div>
+                    <div class="switch-top"></div>
+                    <div class="switch-section"></div>
+                    <div class="switch">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+              
+                <!-- Camera -->
+
+                <div class="camera-outter">
+                    <div class="box"></div>
+                    <div class="eye"></div>
+                    <div class="circle"></div>
+                    <div class="dot"></div>
+                </div>
+              
+                <!-- Bottom Line -->
+              
+              <div class="bottom-line"></div>
+
+            </div>
         </div>
+    </section>
+        
     </body>
 </html>
